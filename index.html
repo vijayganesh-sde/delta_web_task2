@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+</head>
+<body onload="startGame()" style="background-color:#000">
+
+<div style="position:absolute;top:250px;left:72%;color:rgb(37, 35, 35);width:150px;height:20px;background-color:#fff" class="score" id="score"></div>
+<div style="position:absolute;top:350px;left:72%;color:rgb(37, 35, 35);font-size:25px;width:150px;height:20px;" class="lives" id="lives"><span style="font-size:25px">Lives: </span>❤️❤️❤️</div>
+<div style="text-align:center;width:480px;position:absolute;top:30px;left:60%">
+  <button onmousedown="moveup()" onmouseup="clearmove()" class="up" ontouchstart="moveup()">UP</button><br><br>
+  <button onmousedown="moveleft()" onmouseup="clearmove()" class="left" ontouchstart="moveleft()">LEFT</button>
+  <button onmousedown="moveright()" onmouseup="clearmove()" class="right" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button onmousedown="movedown()" onmouseup="clearmove()" class="down" ontouchstart="movedown()">DOWN</button>
+</div>
+
+</body>
+</html>
